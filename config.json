@@ -1,0 +1,22 @@
+{
+    "modules": [
+        {"name": "ai_strategy", "class": "AIStrategy"},
+        {"name": "Backtester", "class": "Backtester"},
+        {"name": "data_collector", "class": "DataCollector"},
+        {"name": "strategy", "class": "Strategy"},
+        {"name": "order_executor", "class": "OrderExecutor"},
+        {"name": "risk_manager", "class": "RiskManager"},
+        {"name": "scalping", "class": "scalping"}
+    ],
+    "trading": {
+        "enabled": false,
+        "symbol": "HMSTRUSDT",
+        "interval": "5s",
+        "quantity": 3034,
+        "max_price_data": 100
+    },
+    "risk": {
+        "max_loss_percent": 2,
+        "stop_loss": 1
+    }
+}

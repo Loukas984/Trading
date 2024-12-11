@@ -1,0 +1,14 @@
+import logging
+
+# Configuration de base des logs
+logging.basicConfig(
+    level=logging.INFO,  # Niveau global des logs
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Format des logs
+    handlers=[
+        logging.StreamHandler(),  # Affichage dans la console
+        logging.FileHandler("bot_logs.log", mode='a')  # Sauvegarde dans un fichier
+    ]
+)
+
+# Exemple de log dans le code
+logging.info("Bot démarré")
